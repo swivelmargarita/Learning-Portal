@@ -1,0 +1,13 @@
+services:
+  ttyd:
+    image: tsl0922/ttyd
+    command: ttyd -p 7681 -c student:KBTU bash
+    ports:
+      - "7681:7681"
+
+  learning-portal:
+    image: tvha23/diploma:latest
+    ports:
+      - "3000:3000"
+    depends_on:
+      - ttyd
