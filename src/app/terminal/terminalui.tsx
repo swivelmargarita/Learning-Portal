@@ -7,7 +7,7 @@ export default function TerminalUI() {
       alignContent: "center",
     }}>
     <iframe
-      src="http://localhost:6969"
+      src="http://localhost:7681"
       style={{
         position: "absolute",
         width: "95%",
